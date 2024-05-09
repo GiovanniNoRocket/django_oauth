@@ -8,7 +8,7 @@ Para instalar y ejecutar este proyecto, sigue estos pasos:
 
 1. Clona el repositorio: `git clone`
 2. Navega al directorio del proyecto: `cd django-allauth`
-3. Iniciar un virtual enviormente con `python -m virtualenv --python==3.10"
+3. Iniciar un virtual enviormente con `python -m virtualenv --python==3.10`
 4. Activar el entorno virtual 
 5. Instala las dependencias: `pip install -r requirements.txt`
 6. Verifica que se hayan realizado todas las migraciones con el comando `python manage.py makemigrations && python manage.py migrate`
