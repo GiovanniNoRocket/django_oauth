@@ -8,18 +8,20 @@ Para instalar y ejecutar este proyecto, sigue estos pasos:
 
 1. Clona el repositorio: `git clone`
 2. Navega al directorio del proyecto: `cd django-allauth`
-3. Instala las dependencias: `pip install -r requirements.txt`
-4. Verifica que se hayan realizado todas las migraciones con el comando `python manage.py makemigrations && python manage.py migrate`
-5. Crear cuenta superusuario `python manage.py createsuperuser`
-6. Registrar los provider desde el admin (Esta app funciona con Facebook y Google)
-7. Ejecuta el servidor de desarrollo: `python manage.py runserver_plus --cert-file cert.crt`
-8. Ir a https://127.0.0.1:8000 
+3. Iniciar un virtual enviormente con `python -m virtualenv --python==3.10"
+4. Instala las dependencias: `pip install -r requirements.txt`
+5. Verifica que se hayan realizado todas las migraciones con el comando `python manage.py makemigrations && python manage.py migrate`
+6. Crear cuenta superusuario `python manage.py createsuperuser`
+7. Registrar los provider desde el admin (Esta app funciona con Facebook y Google)
+8. Ejecuta el servidor de desarrollo: `python manage.py runserver_plus --cert-file cert.crt`
+9. Ir a https://127.0.0.1:8000 
 
 El uso del comando en el paso 5 se realiza para generar un certificado SSL (no ideal para producción) puesto que OAUTH – RFC 6749 hace uso de conexiones HTTPS por motivos de seguridad.
 
 ## :warning: Notas
 
 - Este proyecto está configurado para usar un certificado SSL auto-firmado para desarrollo. No es recomendable usar este tipo de certificado en un entorno de producción.
+- Debe tener instalada una version 3.10 de python
 
 ## :books: Recursos
 
