@@ -1,0 +1,22 @@
+# .gitignore
+__pycache__/
+*.py[cod]
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.sqlite3
+*.sqlite3-journal
+*.swp
+.DS_Store
+.env
+.venv/
+dist/
+build/
+*.egg-info/
+.idea/
+.vscode/
+*.crt
+*.key
